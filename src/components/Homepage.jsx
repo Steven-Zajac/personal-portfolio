@@ -26,8 +26,8 @@ const Homepage = () => {
 export default Homepage;
 
 const Container = styled.div`
-    margin: 4vh;
-    padding: 2vh 0 25px 2vw;
+    margin: 0 6vw 4vh 3vh;
+    padding: 7vh 0 25px 2vw;
 `;
 
 const Img = styled.img`

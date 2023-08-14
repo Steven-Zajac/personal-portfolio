@@ -8,16 +8,15 @@ const Contact = () => {
 
     //usePageTitle("Let's get in touch!");
 
-    //const mail = `mailto:zajac.steve@icloud.com?subject=${testing}`
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
     const mailTo = `mailto:zajac.steve@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
-    //const mailTo = "mailto:zajac.steve@icloud.com?subject=Hello&body=I-need-help"
+    
     return (
         <Container>
             <SectionTitle>Contact me</SectionTitle>
-            <Form  action={mailTo}  method="post" encType="text/plain">
+            <Form  action={mailTo}  method="post" encType="text/plain" target="_blank" rel="noopener">
                 <Input required autoComplete='name' type="text" placeholder="Full Name"></Input>
                 <Input required autoComplete="email" type="email" placeholder="E-mail"></Input>
                 <Input onChange={e => setSubject(e.target.value)} required type="text" placeholder="Subject"></Input>
@@ -37,12 +36,9 @@ const Contact = () => {
 export default Contact;
 
 const Container = styled.div`
-    //margin: 5vh;
-    //padding: 5vh;
-    //padding-top: 1.25rem;
-    margin: 3vh 5vh;
+    margin: 5rem 5vh 0 5vh;
     width: 80%;
-    padding-bottom: 5vh;
+    padding-bottom: 0vh;
 `;
 
 const SectionTitle = styled.h1`
@@ -53,9 +49,8 @@ const SectionTitle = styled.h1`
 const Form = styled.form`
     display: block;
     border-radius: 5px;
-    //padding-top: 1.25rem;
-    margin: 3vh 5vh;
-    width: 70%;
+    margin: 3vh 2vw 0 2.5vh;
+    padding-right: 5vw;
 `;
 
 const Input = styled.input`
@@ -87,6 +82,7 @@ const MessageBox = styled.textarea`
 
 const Submit = styled.input`
     border-radius: 5px;
+    margin-left: .5vw;
     background-color: pink;
     font-weight: bold;
     border: 2px solid #000000da;
@@ -94,14 +90,29 @@ const Submit = styled.input`
     padding: .5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
-
+    transition: all .2s ease-in-out; 
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+        //box-shadow: 0 5px #666;
+        transform: translate(4px);
+    }
 `;
 
 const Icons = styled.div`
-    padding: 3vh 0 2vh 0;
+    padding: 3rem 0 2vh 0;
     margin-left: 2vw;
 `;
 
 const Social = styled(SocialIcon)`
     margin-right: 2.5vw;
+    transition: all .2s ease-in-out; 
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+        //box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
 `;

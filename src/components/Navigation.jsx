@@ -1,5 +1,5 @@
 //import { NavLink } from "react-router-dom";
-import { NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import styled from "styled-components";
 
 const Navigation = () => {
@@ -37,7 +37,7 @@ const Right = styled.span`
     font-size: 23px;
 `;
 
-const PrettyLink = styled(NavHashLink)`
+const PrettyLink = styled(HashLink)`
     text-decoration: none;
     color: lightgreen;
     padding: 0 1.2vw;
@@ -50,7 +50,6 @@ const PrettyLink = styled(NavHashLink)`
         color:#C8A2C8;
         border: 1px solid #C8A2C8;
     }
-
 `;
 
 
@@ -73,7 +72,7 @@ const PrettyLink = styled(NavHashLink)`
 </Nav>*/ 
 
 /*
- <Nav>
+<Nav>
             <List>
                 <ListItem><PrettyLink smooth to='#'>Home</PrettyLink></ListItem>
                 <ListItem><PrettyLink smooth to='#about'>About Me</PrettyLink></ListItem>

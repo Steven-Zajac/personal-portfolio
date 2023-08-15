@@ -14,6 +14,7 @@ const Contact = () => {
     const mailTo = `mailto:zajac.steve@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
     
     return (
+        <>
         <Container>
             <SectionTitle>Contact me</SectionTitle>
             <Form  action={mailTo}  method="post" encType="text/plain" target="_blank" rel="noopener">
@@ -29,7 +30,9 @@ const Contact = () => {
                 <Social url="https://github.com/Steven-Zajac" target="_blank"/>
                 <Social url="mailto:zajac.steve@icloud.com" target="_blank" />
             </Icons>
+            <Break />
         </Container>
+        </>
     );
 };
 
@@ -37,13 +40,15 @@ export default Contact;
 
 const Container = styled.div`
     margin: 5rem 5vh 0 5vh;
-    width: 80%;
-    padding-bottom: 0vh;
+    width: 50%;
+    padding-bottom: 5vh;
 `;
 
 const SectionTitle = styled.h1`
     padding-bottom: .5vh;
     font-size: 2.15rem;
+    text-decoration: underline;
+
 `;
 
 const Form = styled.form`
@@ -57,7 +62,7 @@ const Input = styled.input`
     margin-bottom: 1rem;
     padding-left: 5px;
     text-align: left;
-    width: 30rem;
+    width: 25rem;
     height: 2rem;
     border-radius: 5px;
     font-size: large;
@@ -115,4 +120,11 @@ const Social = styled(SocialIcon)`
         //box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
+`;
+
+const Break = styled.hr`
+    width: 15%;
+    border: 1px solid;
+    background-color: black;
+    margin-left: 80%;
 `;

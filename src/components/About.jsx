@@ -31,6 +31,7 @@ const Container = styled.div`
 const SectionTitle = styled.h1`
     padding: 1rem 0 .75em 0;
     font-size: 2.15rem;
+    text-decoration: underline;
 `;
 
 const SectionText = styled.p`

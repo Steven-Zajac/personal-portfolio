@@ -8,6 +8,7 @@ const Projects = () => {
     //usePageTitle('My Projects');
 
     return (
+        <>
         <Container>
             <SectionTitle>Projects</SectionTitle>
             <ItemContainer>
@@ -20,32 +21,37 @@ const Projects = () => {
                 </GameDesc>
             </ItemContainer>
         </Container>
+        {/*<Break />*/}
+        </>
     )
 };
 
 export default Projects;
 
 const Container = styled.div`
-    margin: 3vh 6vh 8rem 5vh;
+    margin: 3vh 6vh 7rem 5vh;
     min-height: fit-content;
 `;
 
 const SectionTitle = styled.h1`
-    padding-bottom: .5vh;
+    padding-bottom: 1.5vh;
     //padding: 1rem 0 .75em 0;
     font-size: 2.15rem;
+    text-decoration: underline;
+
 `;
 
 const ItemContainer = styled.div`
-    margin-left: 3rem;
+    margin-left: 2rem;
     padding-top: 1rem;
 `;
 
-const PTitle = styled.div`
+const PTitle = styled.h2`
+    width: 80%;
     margin-left: 2rem;
     padding-bottom: 1rem;
     text-decoration: underline;
-    font-size: x-large;
+    //font-size: x-large;
     font-weight: bolder;
 `;
 
@@ -60,19 +66,17 @@ const GameLink = styled(Link)`
 `;
 
 const GameDesc = styled.div`
-    margin-left: 11rem;
+    margin-left: 7rem;
     width: 20rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: large;
     font-weight: bold;
 `;
 
 const GameImg = styled.img`
-    width: 12rem;
-    height: 18rem;
-    //min-width: 15rem;
-    //min-height: 20rem;
-    margin-right: 3rem;
+    width: 10rem;
+    height: 13rem;
+    margin-right: 2rem;
     margin-left: 2rem;
     float: left;
     transition: all .2s ease-in-out; 
@@ -85,3 +89,8 @@ const GameImg = styled.img`
     }
 `;
 
+/*const Break = styled.hr`
+    width: 15%;
+    border: 1px solid;
+    background-color: black;
+`;*/

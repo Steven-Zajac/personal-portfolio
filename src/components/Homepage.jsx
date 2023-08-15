@@ -26,7 +26,7 @@ const Homepage = () => {
 export default Homepage;
 
 const Container = styled.div`
-    margin: 0 6vw 4vh 3vh;
+    margin: 0 5vw 4.5vh 3vh;
     padding: 7vh 0 25px 2vw;
 `;
 

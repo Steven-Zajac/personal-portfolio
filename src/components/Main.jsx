@@ -21,7 +21,7 @@ const Main = () => {
 export default Main;
 
 const Div = styled.div`
-    margin-left: 8rem;
+    margin-left: 10vw;
 `;
 
 

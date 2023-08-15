@@ -59,7 +59,7 @@ const PrettyLink = styled(HashLink)`
     display: block;
     color: lightgreen;
     padding: 5px 1.2vw;
-    margin: 2px 0;
+    margin: 2px 10px 2px 0;
     text-align: left;
 
     &:hover{

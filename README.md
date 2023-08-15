@@ -18,7 +18,6 @@ As mentioned, this is a very rudimentary webpage that is to be upgraded as I com
 
 Future versions of the website would include:
 
-- A navigation side-bar
 - Added social-media links to bottom of side-bar
 - A direct link to a downloadable CV with preview
 - Additional personal projects

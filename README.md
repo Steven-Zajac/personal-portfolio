@@ -6,7 +6,7 @@ This is a beta version of a personal portfolio. The vision for this project is t
 
 Since my ultimate goal for taking this bootcamp is for personal development, I have left out certain items (ie. CV) as a personal preference.
 
-I envisioned a single page application that would be easy for visitors to navigate and easy for me to update in the near future when I work on larger and more significant projects (reason why there is only one project posted).
+I envisioned a single page application that would be easy for visitors to navigate and easy for me to update in the near future when I work on larger and more significant projects (reason why there is only one project posted). I have added small animation and a description that appears when the visitor hovers over the project image.
 
 The contact section uses very basic "mailto" link which grabs the subject and body that the visitor has entered on the webpage. Eventually, I would prefer to remove the form altogether and would prefer to simply have icons or links to my personal websites and/or emails.
 
@@ -21,7 +21,6 @@ Future versions of the website would include:
 - Added social-media links to bottom of side-bar
 - A direct link to a downloadable CV with preview
 - Additional personal projects
-- Project description over project image on hover
 - Animation on project images
 - Stable emailing functionality
 - Animated homepage when user first lands
